@@ -1,0 +1,57 @@
+body{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16pt;
+}
+
+div{
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
+   
+}
+
+table{
+    margin: 0 auto;
+    text-align: center;
+    width: 100% !important;
+}
+
+button{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+#agregar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+#agregar{
+    background-color: green;
+}
+
+#cambiar{
+    background-color: #1883ba;
+}
+
+#pagar{
+    background-color: red;
+}
+
+
+input, select{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12pt;
+}
