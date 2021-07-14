@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulperia La Unión</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div>
+        <select  id="producto" onchange="obtener()">
+            <option value="" selected>Seleccionar Producto</option>
+            <option value="1">Toallas Húmedas Hubbies</option>
+            <option value="2">Corn Flakes</option>
+            <option value="3">Numar Clásica</option>
+            <option value="4">Café Presto 150g</option>
+            <option value="5">Xedex 500g</option>
+            <option value="6">Magia Blanca 900ml</option>
+            <option value="7">Nevax 4 Rollos</option>
+            <option value="8">Nido 800g</option>
+            <option value="9">Magia Blanca 1L</option>
+            <option value="10">Fuente Pura 18.9L</option>
+        </select>
+        <b>Precio: </b>
+        <input type="number" id="precio" disabled/>
+        <br>
+        <br>
+        <b>Nuevo Precio: </b>
+        <input type="number" id="nuevo_precio" min="1" value="1"/>
+        <button id="cambiar" onclick="cambiar()">Cambiar Precio</button>
+        <hr>
+        <button id="agregar" onclick="agregar()">Agregar</button>
+        <hr>
+        <b>Carrito</b>
+        <table border="1" >
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>SubTotal</th>
+                </tr>
+            </thead>
+            <tbody id="carritos"> 
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th><b id="total">0.00</b></th>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <input type="number" id="pago">
+        <button id="pagar" onclick="vuelto()">Pagar</button>
+        <br>
+        <br>
+        <b>Vuelto:</b><input type="number" id="tcambio" readonly>
+        <br>
+        <br>
+        <table border="1" id="cambio">
+            <thead>
+                <tr>
+                    <th>Billete</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="vuelto">
+
+            </tbody>
+        </table>
+     
+        
+    </div>
+   
+</body>
+<script src="js/facturacion.js"></script>
+<script src="js/init.js"></script>
+
+</html>
